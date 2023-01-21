@@ -22,7 +22,7 @@ def send_webhook(url, content=None, embeds=[]):
 
 def embed_from_group(data, funds=None):
     return dict(
-        title="Found claimable group",
+        title="☆ New Group Found! ☆", color=0xF23434,
         url=f"https://www.roblox.com/groups/{data['id']}/--",
         fields=[
             dict(name="Group Id", value=data["id"]),
